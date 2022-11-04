@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow: hidden;
+}
+
+.container-mobile {
+  position: absolute;
+  width: 768px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.container-mobile img {
+  position: relative;
+  width: 100%;
+}
+
+.navbar {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 2rem 2rem 0 0;
+  -webkit-box-shadow: 0px 0px 80px 0px rgba(255, 255, 255, 1);
+  -moz-box-shadow: 0px 0px 80px 0px rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 80px 0px rgba(255, 255, 255, 1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+}
+
+.home-button {
+  position: absolute;
+  left: 3%;
+  top: 3%;
+  width: 35px;
+  height: 35px;
+  border-radius: 16px;
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 1);
+  -moz-box-shadow: 0px 0px 180px 0px rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.home-button .home-svg {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+}
