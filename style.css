@@ -3,76 +3,85 @@
   margin: 0;
 }
 
-body {
-  overflow: hidden;
+.banner {
+  background: #1f1f1f;
+  width: 100%;
+  height: 42px;
 }
 
-/* codepen load */
-.loader {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
+.swiper {
+  background-color: black;
+  width: 100%;
+  height: 15vh;
+}
+
+.swiper img {
+  width: 100%;
+  height: auto;
+}
+
+video {
   position: relative;
-  border: 4px solid #fff;
+  height: auto;
+  width: 95%;
+  margin-top: 50px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.conten {
+  border: 1px solid lightgray;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-top: 50px;
+  width: 95%;
+}
+
+.conten img {
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.conten .text {
+  margin: 0 0 13px 13px;
+  width: 93%;
+  font-size: 13px;
+}
+
+.download-gdrive {
+  position: relative;
+  margin-top: 50px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 95%;
+}
+
+.download-gdrive img {
+  width: 100%;
+}
+
+.button-download {
+  background-color: #2c2c2c;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 150px;
+  height: 50px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.button-download p {
+  position: relative;
   top: 50%;
-  animation: loader 2s infinite ease;
+  left: 50%;
+  transform: translate(-27%, -50%);
+  color: white;
 }
 
-.loader-inner {
-  vertical-align: top;
-  display: inline-block;
-  width: 100%;
-  background-color: #fff;
-  animation: loader-inner 2s infinite ease-in;
-}
-
-@keyframes loader {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  25% {
-    transform: rotate(180deg);
-  }
-
-  50% {
-    transform: rotate(180deg);
-  }
-
-  75% {
-    transform: rotate(360deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes loader-inner {
-  0% {
-    height: 0%;
-  }
-
-  25% {
-    height: 0%;
-  }
-
-  50% {
-    height: 100%;
-  }
-
-  75% {
-    height: 100%;
-  }
-
-  100% {
-    height: 0%;
-  }
-}
-/* codepen load */
-
-.container-mobile img {
-  width: 100%;
+.padding-end {
+  height: 18.5vh;
 }
 
 h6 {
@@ -190,8 +199,17 @@ a {
     color: white;
   }
 
+  .swiper {
+    width: auto;
+    height: 60vh;
+  }
+
+  .swiper img {
+    width: 100%;
+  }
+
   .navbar {
-    position: absolute;
+    position: fixed;
     left: 50%;
     transform: translate(-50%, 0);
     -ms-transform: translate(-50%, 0);
